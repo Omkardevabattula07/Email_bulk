@@ -17,3 +17,23 @@ env file:
 SENDER_EMAIL=youremail@gmail.com
 APP_PASSWORD=your_16_char_app_password_here
 
+
+
+packages:
+python3 -m venv venv
+source venv/bin/activate        # Linux / macOS
+# on Windows: venv\Scripts\activate
+pip install --upgrade pip
+pip install openpyxl python-dotenv
+# tkinter is usually preinstalled with Python on Linux distros with GUI.
+# If tkinter is missing, install system package e.g. on Debian/Ubuntu:
+# sudo apt install python3-tk
+
+
+openpyxl — read Excel (.xlsx).
+
+python-dotenv — optional, to keep credentials in .env.
+
+tkinter — GUI (builtin).
+
+Standard-library: smtplib, email modules.
